@@ -40,6 +40,4 @@ class Product extends Model
         return $this->belongsToMany(Supplier::class, 'product_suppliers', 'product_id', 'supplier_id')
                     ->withPivot('date_supplied', 'prod_price');
     }
-
-    
 }

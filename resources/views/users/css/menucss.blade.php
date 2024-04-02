@@ -28,6 +28,7 @@ body {
     padding-bottom: 1.5%;
         flex-direction: column;
         transition: top 0.3s ease; /* Add smooth transition */
+        
 }
 
 .menu-card p{
@@ -36,19 +37,41 @@ body {
     margin-top: 10px;
 }
 
-.product-cards {
-    display: flex; /* Change from grid to flex */
-    flex-wrap: wrap; /* Allow the cards to wrap to the next line */
-    justify-content: flex-start; /* Align the cards to the start of the container */
+#product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 50px;
     margin-left: 50px;
+    position: relative;
+    align-items: start;
 }
 
 .wrapper {
-    flex: 0 0 calc(33.333% - 20px); /* Set width of each card to approximately one-third of the container */
-    margin-right: 20px; /* Add margin between cards */
+    width: calc(25% - 20px); /* Set width for each product card (4 cards in a row) */
     margin-bottom: 20px; /* Add margin between rows */
+    box-sizing: border-box;
 }
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: calc(33.33% - 20px); /* Show 3 cards in a row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        width: calc(50% - 20px); /* Show 2 cards in a row on even smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: calc(100% - 20px); /* Show 1 card in a row on the smallest screens */
+    }
+}
+
+
 
 
 .product-img {
@@ -117,7 +140,7 @@ body {
 .product-price-btn p {
     display: inline-block;
     position: absolute;
-    top: -13px;
+    top: -120px;
     height: 50px;
     font-family: 'Trocchi', serif;
     margin: 0 0 0 38px;

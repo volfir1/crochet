@@ -34,21 +34,21 @@
 </div>
 
 
-        <div class="product-cards">
+        <div class="mb-4 col md-3 col-6" id="product-cards">
         @foreach($products as $product)
             <!-- Content of your product cards goes here -->
             <div class="wrapper">
                 <div class="product-img">
-                    <img src="{{ $product->image_url }}" height="400" width="400">
+                    <img src="{{ $product->img }}" height="400" width="400">
                 </div>
                 <div class="product-info">
                     <div class="product-text">
-                        <h1>{{ $product->product_name }}</h1>
+                        <h1>{{ $product->prod_name ?? 'Product Name not Available' }}</h1>
                        
                         <p>{{ $product->prod_desc }}</p>
                     </div>
                     <div class="product-price-btn">
-                        <p><span>{{ $product->price }}</span>$</p>
+                        <p><span>{{ $product->price }}</span>₱</p>
                         <button type="button">Buy Now</button>
                     </div>
                 </div>

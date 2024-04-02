@@ -7,16 +7,14 @@ use App\Models\Product;
 use Illuminate\Support\Facades\Storage;
 use App\Models\ProductSupplier;
 use App\Models\Supplier;
-
-
 use View;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        $product= Product::withTrashed()->get();
-        return view('product.index', compact('product'));
+        $products = Product::withTrashed()->get();
+        return view('product.index', compact('products'));
     }
 
     public function create()
@@ -154,3 +152,5 @@ public function update(Request $request, $id)
 //     return redirect()->route('product.index')->with('success', 'Product permanently deleted successfully.');
 // }
 }
+
+

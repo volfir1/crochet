@@ -67,3 +67,5 @@ Route::post('/suppliers/{id}', [SupplierController::class, 'update'])->name('sup
 Route::get('/suppliers/{id}/restore', [SupplierController::class, 'restore'])->name('supplier.restore');
 Route::delete('/suppliers/{id}', [SupplierController::class, 'delete'])->name('supplier.delete');
 Route::delete('/suppliers/{id}/destroy', [SupplierController::class, 'destroy'])->name('supplier.destroy');
+
+
