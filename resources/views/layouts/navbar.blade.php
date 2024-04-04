@@ -10,9 +10,9 @@
 
 </head>
 <body>
-<div class="superNav border-bottom py-2 bg-light">
+<div class="py-2 superNav border-bottom bg-light">
      
-    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+    <nav class="p-3 bg-white shadow-sm navbar navbar-expand-lg sticky-top navbar-light">
       <div class="container">
         <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>GANTSILYO PH</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +21,9 @@
     
         <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
           <div class="input-group">
-            <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="text-white border-warning input-group-text bg-warning"><i class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" class="form-control border-warning" style="color:#7a7a7a">
-            <button class="btn btn-warning text-white">Search</button>
+            <button class="text-white btn btn-warning">Search</button>
           </div>
         </div>
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
@@ -32,21 +32,21 @@
            
            
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/userindex">Catalog</a>
+              <a class="mx-2 nav-link text-uppercase" href="/userindex">Catalog</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/menu">Products</a>
+            <a class="mx-2 nav-link text-uppercase active" aria-current="page" href="/home">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/about">About</a>
+              <a class="mx-2 nav-link text-uppercase" href="/about">About</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i> Logout</a>
+              <a class="mx-2 nav-link text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i> Logout</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/account"><i class="fa-solid fa-circle-user me-1"></i> Account</a>
+              <a class="mx-2 nav-link text-uppercase" href="/account"><i class="fa-solid fa-circle-user me-1"></i> Account</a>
             </li>
           </ul>
         </div>
